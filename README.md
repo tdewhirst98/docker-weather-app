@@ -5,50 +5,60 @@ This is a simple weather application that fetches weather data using the OpenWea
 ## Prerequisites
 
 - [Docker](https://www.docker.com/) installed on your machine
-- OpenWeatherMap API Key
+- Generate an API_KEY with [OpenWeatherMap] (https://openweathermap.org/guide)
 
 ## Project Setup
 
-### 1. Clone the Repository
+ 1. Clone the Repository
+
+```bash 
+git clone
+https://github.com/your-username/weather-app.git
+```
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
-cd weather-app ```
+cd weather-app 
+```
 
-### 2. Create a `.env` File
+## 2. Create a .env File
 
 In the root of the project directory, create a `.env` file to store your API key and other configurations.
 
 ```bash
-touch .env ```
+touch .env
+```
 
 
-### 3. Update Latitude and Longitude in `weather-app.py`
+## 3. Update Latitude and Longitude in `weather-app.py`
 
 In the `weather-app.py` file, update the `lat` and `long` variables with your desired location's latitude and longitude:
 
 ```python
 lat = 'your_latitude'
-long = 'your_longitude' ```
+long = 'your_longitude'
+```
 
 
-### 4. Build the Docker Image
+## 4. Build the Docker Image
 
 To build the Docker image, run the following command in the project directory:
 
 ```bash
-docker build -t weather-app . ```
+docker build -t weather-app . 
+```
 
-### 5. Run the Docker Container
+## 5. Run the Docker Container
 
 Run the app inside a Docker container by using the following command:
 
 ```bash
-docker run -d --env-file .env --name weather-app-container weather-app ```
+docker run -d --env-file .env --name weather-app-container weather-app 
+```
 
-### 6. View Logs
+## 6. View Logs
 
 To view the logs and see the output from the weather app, use the following command:
 
 ```bash
-docker logs weather-app-container ```
+docker logs weather-app-container
+```
