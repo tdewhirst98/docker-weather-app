@@ -9,8 +9,8 @@ load_dotenv()
 
 api_key = os.getenv("API_KEY")
 
-lat = '44.637489'
-long = '76.326607'
+lat = '' #Enter your latitude and longitude
+long = ''
 
 if not api_key:
     raise ValueError("API KEY is missing in environment variable")
