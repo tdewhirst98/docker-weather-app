@@ -6,4 +6,3 @@ COPY . .
 CMD ["python", "weather-app.py"]
 
 
-#weather-app
